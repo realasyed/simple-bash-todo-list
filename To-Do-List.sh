@@ -21,7 +21,7 @@ while [ $QUIT -eq 0 ]; do
 	cat -n tasks.txt
 
 	echo "------------------------"
-	echo "Would you like to [a]dd a new entry, [d]elete and old one, or [q]uit the program? (a/d/q)"
+	echo "Would you like to [a]dd a new entry, [d]elete an old one, or [q]uit the program? (a/d/q)"
 	read LETTER
 	case $LETTER in
 		a|1)
