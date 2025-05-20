@@ -6,8 +6,8 @@ clear
 QUIT=0
 
 #Makes sure user has tasks.txt, an essential file for the program.
-TASKS=~/Programs/BASH/To-Do-List/tasks.txt
-if test -f "$TASKS"; then
+TASKS="~/Programs/BASH/To-Do-List/tasks.txt"
+if [[ test -f "$TASKS" ]]; then
 	echo ""
 else
 	echo "tasks.txt not found! Creating tasks.txt..."
@@ -16,7 +16,7 @@ else
 fi
 
 #actual to do list 
-while [ $QUIT -eq 0 ]; do 
+while [[ $QUIT -eq 0 ]]; do 
 	echo "Your current to-do list:"
 	cat -n tasks.txt
 
