@@ -7,7 +7,7 @@ QUIT=0
 
 #Makes sure user has tasks.txt, an essential file for the program.
 TASKS="~/Programs/BASH/To-Do-List/tasks.txt"
-if [[ test -f "$TASKS" ]]; then
+if test -f "$TASKS"; then
 	echo ""
 else
 	echo "tasks.txt not found! Creating tasks.txt..."
